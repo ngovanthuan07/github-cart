@@ -105,8 +105,7 @@ let handleCart = (productCart) => {
   price = 0; // reset price
   let cartElement = listProduct.map((productC) => {
     let productEl = productC.product;
-    price += productEl.price;
-
+    price +=  productEl["price"] * productC.quantity;
     return `
             <ul class="cart_list">
                 <li class="cart_item clearfix">
