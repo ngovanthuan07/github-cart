@@ -9,6 +9,7 @@ String action = request.getParameter("action");
 			RequestDispatcher rd = request.getRequestDispatcher("/views/web/cart/cart.jsp");
 			rd.forward(request, response);
 		} else {
+			// them gio vao gio hang
 			String productId = request.getParameter("productId");
 			long id;
 			if (productId != null) {
